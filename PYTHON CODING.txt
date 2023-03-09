@@ -1,0 +1,389 @@
+
+PYTHON CODING:
+
+1.a=int(input("Enter the value : "))
+print("Multiplication table of ",a)
+for i in range (0,21):
+    print(i ,"*",a,"=",i*a)
+print("Subraction table of ",a)
+for i in range (0,21):
+    print(i ,"-",a,"=",i-a)
+
+2.a=input("Enter the value : ")
+b=['A','B','C','D','E','F','G','H','I','J','K','L','M','N','O','P','Q','R','S','T','U','V','W','X','Y','Z']
+c=(b.index(a))
+for i in range(c,26):
+    print(b[i],end="")
+
+3.a=int(input("Enter the value : "))
+b=str(a)
+c=int(b[::-1])
+print(a,'-',c,'=',a-c)
+
+5.a=input("Enter the value : ")
+b=['A','B','C','D','E','F','G','H','I','J','K','L','M','N','O','P','Q','R','S','T','U','V','W','X','Y','Z']
+c=(b.index(a))
+d=c
+for i in range(c,-1,-1):
+    for j in range(0,i+1):
+        print(b[i],end="")
+    print('')
+
+6.a=int(input("Enter the value : "))
+print("Group 1:")
+for i in range(101,101+a,4):
+    print(i)
+print(" ")
+print("Group 2:")
+for i in range(102,101+a,4):
+    print(i)
+print(" ")
+print("Group 3:")
+for i in range(103,101+a,4):
+    print(i)
+print(" ")
+print("Group 4:")
+for i in range(104,101+a,4):
+    print(i)
+print(" ")
+
+7.num=input("Enter an odd lenght number:")
+length=len(num)
+for i in range(length):
+    for j in range(length):
+        if i==j or i+j==length-1:
+            print(num[i],end=" ")
+        else:
+            print(" ",end=" ")
+    print()
+
+9.a=input("Array 1: ")
+b=a.split(',')
+c=[]
+for i in range(0,len(b)):
+    c.append(int(b[i]))
+x=input("Array 2: ")
+y=x.split(',')
+z=[]
+for i in range(0,len(y)):
+    z.append(int(y[i]))
+val1=set(c)
+val2=set(z)
+val3=list(val1.union(val2))
+print("Merged Array : ",end="")
+for i in range (0,len(val3)):
+     print(val3[i],end='')
+     print(",",end='')
+
+13.a=int(input("side : "))
+print("Area of the square is : ",a*a)
+
+14.l=int(input("Length : "))
+w=int(input("Width : "))
+print("Area of the rectangle is : ",l*w)
+
+15.radius = float(input('Enter radius: '))  
+height = float(input('Enter height: ')) 
+
+
+#Surface area of the Cylinder = 2πrh+2πr2
+
+
+
+csa = (2 * 22 * radius* height) / 7 #curved surface area
+esa = (2 * 22 * (radius ** 2)) / 7  #end surface area
+tsa = csa + esa  #tsa--total surface area
+
+print("Total surface area is:",round(tsa,2))
+
+16.def CalcPoly(a, b, c, x):
+    print (a*x**2 + b*x + c)#ax^2+bx+c
+
+if __name__=="__main__":
+    a = int(input("Enter the first degree: "))
+    b = int(input("Enter the second degree: "))
+    c = int(input("Enter the third degree: "))
+    
+    CalcPoly(a, b, c, 4) # x=4
+
+24.ch='A'
+print("The ASCII value of a character is",ord(ch))
+
+25.a=int(input("Enter the first number:"))
+b=int(input("Enter the second number:"))
+q=a//b
+r=a%b
+print("Quotient is:",q)
+print("Remainder is:",r)
+
+27.a=int(input("Enter the value of a : "))
+b=int(input("Enter the value of b : "))
+temp=a
+a=b
+b=temp
+print("The value of a",a)
+print("The value of b",b)
+
+28.a=int(input("Enter the value : "))
+if a%2==0:
+    print("The given number  is even")
+else:
+    print("The given number  is odd")
+
+29.while True:
+    a=input("Enter a single character : ")
+    if len(a)==1 :
+        break
+    else:
+        print("enter single character only")
+
+a=a.casefold()
+vowels='aeiou'
+consonant="bcdfghjklmnpqrstvwxyz"
+vowels=vowels.casefold()
+consonant=consonant.casefold()
+if a in vowels:
+    print("The character is vowel")
+elif a in consonant :
+    print("The character is consonant")
+else:
+    print("Enter a valid character")
+
+30.num1 = float(input('Enter the first number : '))
+num2 = float(input('Enter the second number : '))
+num3 = float(input('Enter the third number : '))
+if (num1 >= num2) and (num1 >= num3):
+    largest = num1
+elif (num2 >= num1) and (num2 >= num3):
+    largest = num2
+
+else:
+    largest = num3
+print("The largest number is",largest)
+
+31.import cmath
+a = int(input("Enter a number"))
+b = int(input("Enter a number"))
+c = int(input("Enter a number"))
+  
+
+d = (b**2) - (4 * a*c)
+  
+
+ans1 = (-b-cmath.sqrt(d))/(2 * a)
+ans2 = (-b + cmath.sqrt(d))/(2 * a)
+  
+
+print('The roots are')
+print(ans1)
+print(ans2)
+
+
+
+#Quadratic equation:ax^2+bx+c=0
+#Quadratic formula:x = [-b ± √(b2 - 4ac)]/2a
+
+#discriminant(d)=b2 - 4ac
+
+32.a=float(input("Enter the value : "))
+if a>0:
+    print("The value is positive")
+elif a==0:
+    print("The value is zero")
+else:
+    print("the value is negative")
+
+33.import string
+while True:
+    a=input("Enter a single character : ")
+    if len(a)==1:
+        break
+    else :
+        print("Enter a single character only")
+if a in string.ascii_letters:
+    print("Entered value is an Alphabet")
+else:
+    print("Entered value is an Not Alphabet")
+
+34.#n(n+1)/2
+num = 16
+
+if num < 0:
+   print("Enter a positive number")
+else:
+   sum = 0
+   # iterate as 0
+   while(num > 0):
+       sum += num
+       num -= 1
+   print("The sum is", sum)
+
+35.a=int(input())
+fact=1
+for i in range(1,a+1):
+    fact=fact*i
+print("The factorial of ",a," is ",fact)
+sum=0
+for i in str(fact):
+    sum += int(i)
+print("The sum of the digits is ",sum) 
+
+36.arr = [1, 2, 3, 4, 5]    
+for i in range(1, len(arr), 2):   
+    print(arr[i]) 
+
+37.arr = [1, 2, 3, 4, 5]    
+for i in range(0, len(arr), 2):   
+    print(arr[i])  
+
+40.arr = [1,2,3,4,6,7,8]
+length=len(arr)
+print("Number of elements are:",length)   
+
+44.arr = [1, 2, 3, 4, 2, 7, 8, 8, 3]    
+     
+print("Duplicate elements in given array: ")   
+   
+for i in range(0, len(arr)):    
+    for j in range(i+1, len(arr)):    
+        if(arr[i] == arr[j]):    
+            print(arr[j]) 
+   
+45.arr = [1, 2, 3, 4, 5,9]    
+sum = 0   
+       
+for i in range(0, len(arr)):    
+   sum = sum + arr[i]  
+     
+print("Sum of all the elements of an array:",sum)  
+
+47.def pyramid(a):
+    for i in range(1,a+1):
+        print(" "*a,end="")
+        a=a-1
+        for j in range(1,i+1):
+            print(j,end="")
+        for k in range(i-1,0,-1):
+            print(k,end="")
+        print('')
+pyramid(9)
+
+48.def pyramid(a):
+    b=a
+    for i in range(a,0,-1):
+        print(" "*b,end="")
+        b=b-1
+        for j in range(i,a+1):
+            print(j,end="")
+        for k in range(a-1,i-1,-1):
+            print(k, end="")
+        print("")
+pyramid(9)
+
+49.a= 9
+b=2*a-2
+for i in range(a+1,0,-1):
+    for space in range(b,0,-1):
+        print(end=" ")
+    b=b+1
+    for star in range(0,i-1):
+        print("* ",end="")
+    print('')
+
+50.a= 9
+b=2*a-2
+for i in range(a,0,-1):
+    for space in range(0,b):
+        print(end=' ')
+    b=b+1
+    for j in range(0,i):
+        print(i," ",end="")
+    print("")
+
+51.num = int(input("Enter a number: "))
+reversed_num = 0
+
+while num != 0:
+    digit = num % 10
+    reversed_num = reversed_num * 10 + digit
+    num //= 10
+
+print("Reversed Number: " + str(reversed_num))
+
+52.def reverse(string):
+    if len(string) == 0:
+        return
+     
+    temp = string[0]
+    reverse(string[1:])
+    print(temp, end='')
+
+string = "one two three"
+reverse(string)
+
+55.a=int(input())
+for i in range(0,a-1):
+    print("*",end="")
+for i in range(0,a-1):
+    print("*")
+for i in range(0,a):
+    print("*",end="")
+
+57.num=input("Enter an odd lenght number:")
+length=len(num)
+for i in range(length):
+    for j in range(length):
+        if i==j or i+j==length-1:
+            print(num[j],end=" ")
+        else:
+            print(" ",end=" ")
+    print()
+
+
+59.def isSubstring(s1,s2):
+    M = len(s1)
+    N = len(s2)
+    for i in range(N-M+1):
+        for j in range(M):
+            if (s2[i + j] !=s1[j]):
+                break
+        if j + 1 == M:
+            return i
+    return -1
+if __name__ == "__main__":
+    s1 = str(input("enter a string"))
+    s2 = str(input("enter a string"))
+    output = isSubstring(s2,s1)
+    if output == -1:
+        print(-1)
+    else:
+        print(str(output))
+
+60.n = int(input())
+i = ""
+sum = 0
+while(n>0):
+    i+="1"
+    sum+=int(i)
+    n-=1
+print(sum)
+            
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

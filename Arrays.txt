@@ -1,0 +1,253 @@
+61.class Main{
+    public static void main(String[] args) {
+        int[]arr={10,20,30,40,50};
+        System.out.println("Original array: ");
+        for(int i=0;i<arr.length;i++){
+            System.out.print(arr[i]+" ");
+        }
+        System.out.println();
+        System.out.println("Reverse array: ");
+        for(int i=arr.length-1;i>=0;i--){
+        System.out.print(arr[i]+" ");
+        }
+        
+        
+            
+        
+
+    }
+}
+
+62.class Main{
+    public static void main(String[] args) {
+        int[]arr={10,20,30,40,50};
+        System.out.println("Even position: ");
+        for(int i=1;i<arr.length;i+=2){
+            System.out.println(arr[i]);
+        }   
+        System.out.println();
+        System.out.println("Odd position: ");
+        for(int i=0;i<arr.length;i+=2){
+            System.out.println(arr[i]);
+        }
+    }    
+        
+}
+
+63.public class Main{
+	public static void main(String[]args) {
+		int[]arr= {3,98,27};
+		int large=arr[0];
+		int small=arr[0];
+		for(int i=1;i<arr.length;i++) {
+			if(arr[i]>large) {
+				large=arr[i];
+			}else if(arr[i]<small) {
+				
+				small=arr[i];
+				}
+			
+		}
+				System.out.println(large);
+				System.out.println(small);
+				
+			
+		}
+}
+
+70.import java.util.Arrays;
+public class Main {
+   public static void main(String args[]){
+      int array[] = {10, 20, 25, 63, 96, 57};
+      int size = array.length;
+      Arrays.sort(array);
+      System.out.println("sorted Array :"+Arrays.toString(array));
+      int res = array[size-2];
+      System.out.println("2nd largest element is :"+res);
+   }
+}
+
+71.import java.util.Arrays;
+public class Main {
+   public static void main(String args[]){
+      int array[] = {10, 20, 25, 63, 96, 57};
+      int size = array.length;
+      Arrays.sort(array);
+      System.out.println("sorted Array :"+Arrays.toString(array));
+      int res = array[1];
+      System.out.println("2nd largest element is :"+res);
+   }
+}
+	
+	
+
+73.public class Main{  
+public static void main(String args[]){  
+   
+int [][] a={{1,3,4},{2,4,3},{3,4,5}};    
+int [][] b={{1,3,4},{2,4,3},{1,2,4}};    
+    
+   
+int [][] c=new int[3][3];   
+    
+   
+for(int i=0;i<3;i++){    
+for(int j=0;j<3;j++){    
+c[i][j]=a[i][j]+b[i][j];    
+System.out.print(c[i][j]+" ");    
+}    
+System.out.println();    
+}    
+}
+}
+
+76.public class Main{  
+public static void main(String args[]){  
+//creating a matrix  
+int original[][]={{1,3,4},{2,4,3},{3,4,5}};    
+    
+//creating another matrix to store transpose of a matrix  
+int transpose[][]=new int[3][3];  //3 rows and 3 columns  
+    
+//Code to transpose a matrix  
+for(int i=0;i<3;i++){    
+for(int j=0;j<3;j++){    
+transpose[i][j]=original[j][i];  
+}    
+}    
+  
+System.out.println("Printing Matrix without transpose:");  
+for(int i=0;i<3;i++){    
+for(int j=0;j<3;j++){    
+System.out.print(original[i][j]+" ");    
+}    
+System.out.println();//new line    
+}    
+System.out.println("Printing Matrix After Transpose:");  
+for(int i=0;i<3;i++){    
+for(int j=0;j<3;j++){    
+System.out.print(transpose[i][j]+" ");    
+}    
+System.out.println();//new line    
+}    
+}}
+
+77.import java.util.Arrays;
+
+public class prac {
+  public static void main(String[] args) {
+    int[] arr = {3, 1, 4, 1, 5, 9, 2, 6, 5, 3, 5};
+    Arrays.sort(arr);
+    System.out.println("Sorted array in ascending order: " + Arrays.toString(arr));
+  }
+}  
+
+78.public class Main{  
+public static void main(String args[]){  
+   
+int [][] a={{1,3,4},{2,4,3},{3,4,5}};    
+int [][] b={{1,3,4},{2,4,3},{1,2,4}};    
+    
+   
+int [][] c=new int[3][3];   
+    
+   
+for(int i=0;i<3;i++){    
+for(int j=0;j<3;j++){    
+c[i][j]=a[i][j]-b[i][j];    
+System.out.print(c[i][j]+" ");    
+}    
+System.out.println();    
+}    
+}
+}
+
+86.public class Mainn {
+    public static void main(String[] args) {
+        char[] name= {'a','b','c','d'};
+        for(int i=0;i<name.length;i++) {
+        	System.out.print(name[i]+" ");
+        }
+    }
+}
+
+90.import java.util.Arrays;  
+public class Main 
+{  
+public static void main(String args[]) {
+	String[]a= {"Banana","Apple","Orange","Graphes"};
+	Arrays.sort(a);
+	System.out.println(Arrays.toString(a));
+}
+}
+
+94.import java.util.Arrays;
+class prac {
+	
+	    public static void main(String[] args) {
+	        String name1="cat";
+	        String name2="act";
+	        if(name1.length()!=name2.length()){
+	            System.out.println("Both the strings are not equal,so it is not anagram");
+	        }else{
+	            System.out.println("It is anagram");
+	        }
+	        char[] String1=name1.toCharArray();
+	        char[]String2=name2.toCharArray();
+	        Arrays.sort(String1);
+	        Arrays.sort(String2);
+	        if(Arrays.equals(String1, String2)==true) {
+	        	System.out.println("Strings are anagram");
+	        }else {
+	        	System.out.println("Strings are not an anagram");
+	        }
+	        
+	        
+	        
+	        
+	        
+	    }
+	}
+
+95.package feb;
+class prac {
+    public static void main(String[] args) {
+        String name1="MADAM";
+        String name2="";
+        for(int i=name1.length()-1;i>=0;i--){
+         name2=name2+name1.charAt(i);
+        }
+        System.out.print(name2);
+        System.out.println();
+        if(name1.equals(name2)){
+            System.out.println("It is palindrome");
+        }else{
+            System.out.println("It is not palindrome");
+        }
+    }
+}
+
+98.public class Main{
+    public static void main(String[]args){
+        char ch='r';
+        int ascii;
+        ascii=ch;
+        ascii=ascii-32;
+        ch=(char)ascii;
+        System.out.println("Equivalent character in uppercase: "+ch);
+    }
+        
+    }
+
+100.public class Main {
+   public static void main(String []args) {
+      int myInt=67;
+      char myChar=(char)myInt;
+      System.out.println("ASCII value to character: "+myChar);
+   }
+}
+
+
+        
+  
+ 

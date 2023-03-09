@@ -1,0 +1,623 @@
+1.public class Main {
+	
+	    public static void main(String[] args) {
+	        int x = 2;
+	        for(int i=0; i<11;i++){
+	        System.out.println(i+"*"+x+"="+(i*x));
+	        }
+	        System.out.println();
+	        for(int i=0;i<11;i++){
+	        System.out.println(i+"-"+x+"="+(i-x));
+	        
+	        }s
+	    }
+	}
+
+2.public class Main {
+	
+    public static void main(String[] args) {
+       char ch ='X';
+       char name = 'Z'; 
+       for(char i=ch;i<=name;i++){
+           System.out.print(i);
+       }
+    }
+}
+
+3.public class Main{
+    public static void main(String[]args){
+        
+        int a =123;
+        int b =0;
+        int c = a;
+        while(a>0){
+         b =(b*10)+(a%10);
+         a = a/10;
+        }
+        System.out.println(c+"-"+b+"="+(c-b));
+        
+        
+    }
+}
+
+
+4.public class Main{
+    public static void main(String[]args){
+        
+        int a =5;
+        int b =3;
+        System.out.println(a&b);
+        System.out.println(a|b);
+        System.out.println(a^b);
+        System.out.println(~a);
+        System.out.println(a>>b);
+        System.out.println(a<<b);
+        
+    }
+}
+
+5.public class Main{
+    public static void main(String[]args){
+        
+        char n='F';
+        char m='A';
+        for(char i=n;i>=m;i--){
+            for (char j=m;j<=i;j++){
+            System.out.print(i);
+        }
+    
+    System.out.println();
+        }    
+    }
+}
+
+6.public class Main{
+    public static void main(String[]args){
+        int a=101;
+        int b=120;
+        int c=20;
+        int size=c/4;
+        int[]array= {1,2,3,4,5};
+        for (int i=a;i<(a+4);i++){
+            for(int j=0;j<size;j++){
+                array[j]=i+(j*4);
+                System.out.println(array[j]+" ");
+            }
+            System.out.println();
+        }
+    }
+}
+
+7.class Main {
+    public static void main(String[] args) {
+        String a="12345";
+        for(int i=1;i<=5;i++){
+            for(int j=1;j<=5;j++){
+                if(i==j||j+i==5+1)
+                    System.out.print(a.charAt(i-1));
+                else
+                    System.out.print(" ");
+                
+            }
+             System.out.println();
+
+        }
+        
+    }
+}
+		
+	
+	
+8.class Main {
+    static int myNum=23;
+    public static void main(String[] args) {
+        System.out.println(myNum);
+    }
+}
+
+
+
+12.public class Main{
+    public static void main(String[]args){
+        float c=7.5f;
+        System.out.printf("%.2f",c);
+    }
+}
+
+13.public class Main {
+    public static void main(String[] args) {
+        int n=2;
+        System.out.println("Area of the square:"+(n*n));
+    }
+}
+
+
+14.public class Main {
+    public static void main(String[] args) {
+        int l=4;
+        int b=3;
+        System.out.println("Area of the rectangle:"+(l*b));
+    }
+}
+
+15.public class Main {
+    public static void main(String[] args) {
+        int r=2;
+        int h=2;
+        float pi=3.14f;
+        
+        
+        System.out.println("Area of the cyclinder:"+(2*pi*r*h+2*pi*r*r));
+    }
+}
+
+17.public class Main{
+	public static void main(String[]args) {
+		int a=2,b=3;
+		float pi=3.14f;
+		float r1=pi*a*a;
+		float r2=pi*b*b;
+		
+		if(r1>r2) {
+		System.out.println("Difference between two circle is:"+(r1-r2));
+		}else {
+			System.out.println("Difference between two circle is:"+(r2-r1));
+		}
+	}
+}
+
+
+18.i).public class Main{
+    public static void main(String[]args){
+    	int a=4;
+    	int b=3;
+    	int c=++a-b--;
+    	System.out.println(c);
+    }
+    	
+    }
+ii).public class Main{
+    public static void main(String[]args){
+    	int a=4;
+    	int b=3;
+    	int c=a%b++;
+    	System.out.println(c);
+    }
+    	
+    }
+iii).public class Main{
+    public static void main(String[]args){
+    	int a=4;
+    	int b=3;
+    	int c=(a*=b+5);
+    	System.out.println(c);
+    }
+    	
+    }
+iv).public class Main{
+	public static void main(String[]args) {
+		int a=69;
+		int b=2;
+		System.out.println(a>>>b);
+	}
+}
+
+19.public class Main{
+    public static void main(String[]args){
+    int a = 28;
+    int b = (a += a++ + ++a + --a + a--);
+    System.out.println(b);
+    }
+}
+
+
+20.public class Main{
+    public static void main(String[]args){
+        int x=2;
+        int y=x++*2+3*--x;
+        System.out .println(y);
+        
+        
+    }
+}
+
+21.public class Main{
+    public static void main(String[]args){
+        int y=10;
+        int z=(++y*(y++ + 5));
+        System.out .println(z);
+        
+        
+    }
+}
+
+23.public class Main{
+    public static void main(String[]args){
+        int x=5;
+        int x1=(++x-x++ + --x);
+        System.out .println(x1);
+        
+        
+    }
+}
+
+24.class Main {
+    public static void main(String[] args) {
+        char ch='G';
+        int a=ch;
+        System.out.println("ASCII value of a is "+a);
+    }
+}
+
+25.public class Main{
+    public static void main(String[]args){
+    int a=8;
+    int b=2;
+    System.out.println(a/b);
+    System.out.println(a%b);
+        
+    }
+}
+
+26.class Main {
+    public static void main(String[] args) {
+        long min=-9223372036854775808l;
+        long max= 9223372036854775807l;
+        
+        
+        System.out.println("min value is: "+min);
+        System.out.println("max value is: "+max);
+    }
+}
+
+27.class Main {
+    public static void main(String[] args) {
+        int a=2;
+        int b=3;
+        int temp=a;
+        a=b;
+        b=temp;
+        System.out.println("a is "+a);
+        System.out.println("b is "+b);
+    }
+}
+
+28.class Main {
+    public static void main(String[] args) {
+        int a=4;
+        if(a%2==0){
+            System.out.println("It is even number");
+            
+        }
+        else{
+            System.out.println("It is odd number");
+        }
+    }
+}
+
+29.class Main {
+    public static void main(String[] args) {
+        char ch='e';
+        switch(ch){
+            case'a':
+            case'e':
+            case'i':
+            case'0':
+            case'u':
+                System.out.println("vowels");
+                break;
+                default:
+                System.out.println("consonant");
+        }
+        
+        
+        
+    }
+}
+
+30.class Main {
+    public static void main(String[] args) {
+        int a=2;
+        int b=3;
+        int c=4;
+        if(a>b&&a>c){
+            System.out.println("The largest number is:"+a);
+        }
+        else if(b>a&&b>c){
+            System.out.println("The largest number is:"+b);
+        }
+        else{
+            System.out.println("The largest number is:"+c);
+        }
+        
+        
+        
+        
+    }
+}
+
+32.class Main {
+    public static void main(String[] args) {
+        int num=23;
+        if(num>0){
+        System.out.println("It is positive");
+        }else if(num==0){
+            System.out.println("Zero");
+        }else{
+            System.out.println("It is negative");
+        }
+    }
+}
+
+33.class Main {
+    public static void main(String[] args) {
+        char ch='A';
+        char name='Z';
+        
+        if(ch>='A'&& name<='Z') {
+        	System.out.println("It is an alphabet");
+        }else {
+        	System.out.println("It is not an alphabet");
+        }
+    }
+}
+
+34.public class prac {
+    public static void main(String[] args) {
+        
+        
+        int num = 4;
+
+        int sum = 0;
+        for (int i = 1; i <= num; i++) {
+            sum += i;
+        }
+        System.out.println("The sum of natural numbers till " + num + " is: " + sum);
+
+        int largest = 0;
+        while (sum > 0) {
+            int digit = sum % 10;
+            if (digit > largest) {
+                largest = digit;
+            }
+            sum /= 10;
+        }
+        System.out.println("The largest digit in the sum is: " + largest);
+    }
+}
+
+35.public class Main{
+	public static void main(String[]args) {
+		int a=4;
+		int f=1;
+		for(int i=1;i<=a;i++) {
+			f=f*i;
+		}
+			System.out.println("The factorial of a is: "+f);
+			int sum=0;
+			while(f>0) {
+				int rev=f%10;
+				sum=sum+rev;
+				f=f/10;
+			}
+			System.out.println("Sum of the factorial is: "+sum);
+	
+		
+		
+		
+	}
+}
+
+36.public class Main{
+	public static void main(String[]args) {
+		int[]a= {1,2,3,4,5,6};
+		for (int i=1;i<a.length;i+=2) {
+			System.out.println("even position "+i);
+			System.out.println("Value is "+a[i]);
+		}
+		}
+	}
+
+37.public class Main{
+	public static void main(String[]args) {
+		int[]a= {1,2,3,4,5,6};
+		for (int i=0;i<a.length;i+=2) {
+			System.out.println("odd position "+i);
+			System.out.println("Value is "+a[i]);
+		}
+		}
+	}
+
+38.public class Main{
+    public static void main(String[]args){
+    	int[]a= {1,2,3,4,5,6};
+    	int small=a[0];
+    	for(int i=0;i<a.length;i++) {
+    		if(small<a[i]) {
+    			small=a[i];
+    		}
+    	}
+    		System.out.println(small);
+    		}
+    	}
+
+39.public class Main{
+    public static void main(String[]args){
+    	int[]a= {1,2,3,4,5,6};
+    	int small=a[0];
+    	for(int i=0;i<a.length;i++) {
+    		if(small>a[i]) {
+    			small=a[i];
+    		}
+    	}
+    		System.out.println(small);
+    		}
+    	}
+    	
+
+40.public class Main{
+	public static void main(String[]args) {
+		int[]a= {1,2,3,4,5,6,8,9};
+		System.out.println("Number of elements is:"+a.length);
+		
+	}
+		}
+
+41.public class Main{
+	public static void main(String[]args) {
+		int[]original= {10,20,30,40};
+		int[]copy=original;
+		System.out.println("original array is:");
+		for(int i=0;i<original.length;i++) {
+			System.out.print(original[i]+" ");
+		}
+		System.out.println();
+		System.out.println("copy array is:");
+		for(int i=0;i<copy.length;i++) {
+			System.out.print(copy[i]+" ");
+		}
+	}
+}
+
+44.public class Main{
+    public static void main(String[]args) {
+    	int[]a= {1,2,2,3,5,6,3,6};
+    	for(int i=0;i<a.length-1;i++) {
+    	for(int j=i+1;j<a.length;j++) {
+    		if((a[i]==a[j])) {
+    			System.out.println("Duplicate element is: "+a[j]);
+    		}
+    	}
+    	}
+    }
+}
+
+45.public class Main{
+    public static void main(String[]args){
+        int []a ={1,2,3,4,5,1};
+        int sum = 0;
+        for(int i=0;i<a.length;i++){
+          sum = sum+a[i];
+        }
+        System.out.println(sum);
+    }
+}
+
+
+51.public class Main{
+    public static void main(String[]args){
+        
+        int a =12345;
+        int b =0;
+        int c = a;
+        while(a>0){
+         b =(b*10)+(a%10);
+         a = a/10;
+        }
+        System.out.println(b);
+        
+        
+    }
+}
+
+52.public class Main{
+    public static void main(String[]args){
+   String str = "one two three four";
+   
+   String [] arr = str.split("\\s");
+   for(int i=arr.length-1;i>=0;i--){
+       System.out.print(arr[i]+" ");
+    
+    }
+    
+}
+}
+
+55.public class Mainn {
+    public static void main(String[] args) {
+        int n=4;
+        for(int i=1;i<=n;i++) {
+        	for(int j=1;j<=n;j++) {
+        		System.out.print("*");
+        		if(i==2 && j==1) {
+        			break;
+        		}
+        		if(i==3 && j==1) {
+        			break;
+        		}
+            
+     
+        	}
+        	System.out.println("");
+        }
+        
+        }
+    
+57.class Main {
+    public static void main(String[] args) {
+        String a="12345";
+        for(int i=1;i<=5;i++){
+            for(int j=1;j<=5;j++){
+                if(i==j||j+i==5+1)
+                    System.out.print(a.charAt(j-1));
+                else
+                    System.out.print(" ");
+                
+            }
+             System.out.println();
+
+        }
+        
+    }
+}
+
+58.public class prac {
+    public static void main(String[] args) {
+        
+        int n = 4;
+       
+
+        for (int i = 0; i < n; i++) {
+            if (i == 0 || i == n - 1) {
+                for (int j = 0; j < n; j++) {
+                    System.out.print("*");
+                }
+                System.out.println();
+            } else {
+                System.out.println("*");
+            }
+        }
+    }
+}
+
+60.int n=5;
+int s=1;
+System.out.print("1");
+for(int i=1;i<n;i++)
+{
+s=s*10+1;
+System.out.print("+" +s);
+}
+
+System.out.println();
+
+for(int i=1;i<=n;i++)
+{
+System.out.print(i);
+}
+}
+}
+
+
+    	
+
+
+
+
+
+
+
+
+
+
+

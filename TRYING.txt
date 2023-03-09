@@ -1,0 +1,293 @@
+9.import java.util.Arrays;
+
+public class Prac{
+	public static void main(String[]args) {
+		int[]a= {1,2,3,4,5};
+		int[]b= {2,3,5};
+		int len=a.length+b.length;
+		int[]c=new int[len];
+		for(int i=0;i<b.length;i++) {
+			c[i]=b[i];
+			for(int j=0;j<a.length;j++) {
+				if(c[i]==a[j]) {
+					a[j]=-1;
+				}
+			}
+			
+		}
+		int k=0;
+		for(int i=0;i<a.length;i++) {
+			if(a[i]!=-1) {
+				c[b.length+k++]=a[i];
+			}
+		}
+		Arrays.sort(c);
+		for(int i=0;i<c.length;i++) {
+			if(c[i]!=0) {
+				System.out.print(c[i]+" ");
+			}
+		}
+	}
+}
+
+10.import java.util.Arrays;
+public class Prac{
+    public static void main(String[]args){
+        int [] arr = {1,12,4,6,7,8,9};
+        int n = arr.length;
+        Arrays.sort(arr);
+        int i = 0;
+        int j = n-1;                                 
+        while(i<j){
+            System.out.print(arr[j--]+" ");
+            System.out.print(arr[i++]+" ");
+        }
+       if(n%2 != 0){
+            System.out.print(arr[i]);
+        }
+       
+        }
+    }
+
+16.import java.util.*;
+public class Prac{
+	public static void main(String[]args) {
+	int a=2;
+	int b=2;
+	int c=2;
+	double d=(b*b-4*a*c);
+	double r1=(-b+Math.sqrt(d)/2*a);
+	double r2=(-b-Math.sqrt(d)/2*a);
+	System.out.println(r1);
+	System.out.println(r2);
+	}
+	
+	
+	
+	
+}
+
+
+43.public class Main{
+    public static void main(String[]args){
+        int [] a = {1,2,3,4,5,6,7};       //
+        int temp = a[0]; 
+        int i =0;
+        System.out.println("before left shift or rotate: ");
+        for(int j=0;j<a.length;j++){
+            System.out.print(a[j]+" ");
+        }
+        for(i=0;i<a.length-1;i++){
+            a[i]=a[i+1];
+        }
+        a[i]=temp;
+        System.out.println();
+        System.out.println("after left shift or rotate: ");
+        for(int j=0;j<a.length;j++){
+            System.out.print(a[j]+" ");
+        }
+
+    }
+}
+
+46.public class Main{
+    public static void main(String[]args){
+        int [] a = {1,2,3,4,5,6,7};       
+    
+        System.out.println("before right shift or rotate: ");
+        for(int j=0;j<a.length;j++){
+            System.out.print(a[j]+" ");
+        }
+        int temp = a[a.length-1];
+        for(int i=a.length-1;i>0;i--){
+            a[i]=a[i-1];
+        }
+      a[0]= temp;
+        System.out.println();
+        System.out.println("after right shift or rotate: ");
+        for(int j=0;j<a.length;j++){
+            System.out.print(a[j]+" ");
+        }
+
+    }
+}
+
+47.public class Main{
+    public static void main(String[]args){
+        int n = 9;
+ for(int i=1;i<=n;i++){
+    for(int j=i;j<=n;j++){
+        System.out.print("  ");
+    }
+    for(int j=1;j<i;j++){
+        System.out.print(j+" ");
+    }
+    for(int j=i;j>=1;j--){
+        System.out.print(j+" ");
+    }
+    System.out.println();
+ }
+    }
+}
+
+48.public class Main{
+    public static void main(String[]args){
+        int n = 9;
+ for(int i=n;i>=1;i--){
+    for(int j=1;j<=i;j++){
+        System.out.print("  ");
+    }
+    for(int j=i;j<n;j++){
+        System.out.print(j+" ");
+    }
+    for(int j=n;j>=i;j--){
+        System.out.print(j+" ");
+    }
+    System.out.println();
+ }
+    }
+}
+
+49.public class Prac{
+    public static void main(String[]args){
+        int n = 9;
+ for(int i=1;i<=n;i++){
+    for(int j=1;j<=i;j++){
+        System.out.print(" ");
+    }
+    for(int j=1;j<=n-i;j++){
+        System.out.print("* ");
+    }
+    System.out.println();
+ }
+    }
+}
+
+50.public class Main{
+    public static void main(String[]args){
+       
+        
+        int n=9;
+      for(int i=1,p=n;i<=n;i++,p--){
+            for(int j=1;j<=i;j++){
+                System.out.print("  ");
+            }
+            for(int j=i;j<=n;j++){
+                System.out.print(p+"   ");
+            }
+            System.out.println();
+        }
+
+    } 
+}
+
+56.public class prac {
+
+	  public static void main(String[] args) {
+	    int rows = 4, number = 1;
+
+	    for(int i = 1; i <= rows; i++) {
+
+	      for(int j = 1; j <= i; j++) {
+	        System.out.print(number+" " );
+	        ++number;
+	      }
+
+	      System.out.println();
+	    }
+	  }
+	}
+
+58.public class prac {
+    public static void main(String[] args) {
+        
+        int n = 4;
+        
+
+        // Print the top half of the pattern
+        for (int i = 0; i < n; i++) {
+            for (int j = 0; j < n - i; j++) {
+                System.out.print("*");
+            }
+            for (int j = 0; j < 2 * i; j++) {
+                System.out.print("_");
+            }
+            for (int j = 0; j < n - i; j++) {
+                System.out.print("*");
+            }
+            System.out.println();
+        }
+
+        // Print the bottom half of the pattern
+        for (int i = n - 2; i >= 0; i--) {
+            for (int j = 0; j < n - i; j++) {
+                System.out.print("*");
+            }
+            for (int j = 0; j < 2 * i; j++) {
+                System.out.print("_");
+            }
+            for (int j = 0; j < n - i; j++) {
+                System.out.print("*");
+            }
+            System.out.println();
+        }
+    }
+}
+
+99.public class prac{
+public static void main(String[] args) {
+    String input = "abcdefghijklmnopqrstuvwxyz";
+    char[] characters = input.toCharArray();
+    
+    for (int i = 0; i < characters.length; i++) {
+        if (characters[i] >= 'a' && characters[i] <= 'z') {
+            characters[i] = (char) (characters[i] - 32);
+        }
+    }
+    
+    String output = new String(characters);
+    System.out.println(output);
+}
+}
+
+91.public class Mainn{
+	public static void main(String[]args) {
+	
+	        String word = "thangavi"; // word to be sorted
+	        char[] chars = word.toCharArray(); // convert string to character array
+	        
+	        // Sort the characters in descending order using bubble sort
+	        for (int i = 0; i < chars.length; i++) {
+	            for (int j = i + 1; j < chars.length; j++) {
+	                if (chars[i] < chars[j]) {
+	                    char temp = chars[i];
+	                    chars[i] = chars[j];
+	                    chars[j] = temp;
+	                }
+	            }
+	        }
+	        
+	        // Print the sorted characters
+	        for (char c : chars) {
+	            System.out.print(c);
+	        }
+	    }
+	}s
+
+
+        
+        
+
+
+
+
+
+
+
+    	
+
+       
+      
+
+
+
